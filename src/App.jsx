@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Home from "./pages/home";
+import Home from "./pages/Home";
 import MyCalculator from "./pages/MyCalculator";
 import Todo from "./pages/Todo";
 import WeatherAlert from "./pages/WeatherAlert";
 import Clock from "./pages/Clock.jsx";
-import Counter from "./pages/counter";
+import Counter from "./pages/Counter";
 
 function App() {
   return (
