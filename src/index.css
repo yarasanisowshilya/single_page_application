@@ -1,0 +1,411 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: #2b2f36;
+  color: #f3f4f6;
+  min-height: 100vh;
+}
+
+/* PAGE CENTER */
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ================= HOME ================= */
+.home {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.home-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.home-subtitle {
+  font-size: 14px;
+  color: #9ca3af;
+  margin-bottom: 36px;
+}
+
+.home-grid {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.home-box {
+  padding: 14px 18px;
+  min-width: 150px;
+  border-radius: 12px;
+  text-decoration: none;
+
+  background: #e5e7eb;
+  color: #111827;
+  font-size: 15px;
+  font-weight: 600;
+
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease;
+}
+
+.home-box:hover {
+  transform: translateY(-3px);
+  background: #d1d5db;
+}
+
+/* ================= CLOCK ================= */
+.clock-page {
+  background: #2b2f36;
+}
+
+.clock-box {
+  background: #0f1115;
+  padding: 28px 40px;
+  border-radius: 16px;
+  text-align: center;
+
+  box-shadow:
+    0 16px 32px rgba(0, 0, 0, 0.8);
+}
+
+.clock-title {
+  font-size: 14px;
+  color: #9ca3af;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.clock-time {
+  font-size: 36px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #000;
+  color: #fff;
+}
+
+.clock-day {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #c7cad1;
+}
+/* ================= CALCULATOR ================= */
+.calc-box {
+  background: #0f1115;
+  padding: 20px;
+  border-radius: 18px;
+  width: 260px;
+
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.8);
+}
+
+/* DISPLAY */
+.calc-display {
+  background: #000;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: right;
+  padding: 16px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  overflow-x: auto;
+}
+
+/* GRID */
+.calc-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* BUTTONS */
+.calc-grid button {
+  height: 48px;
+  border-radius: 12px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+
+  background: #1f2937;
+  color: #f9fafb;
+}
+
+.calc-grid button:hover {
+  background: #374151;
+}
+
+/* OPERATORS */
+.calc-grid .op {
+  background: #f59e0b;
+  color: #000;
+}
+
+.calc-grid .op:hover {
+  background: #d97706;
+}
+
+/* EQUAL */
+.calc-grid .equal {
+  background: #22c55e;
+  color: #000;
+}
+
+.calc-grid .equal:hover {
+  background: #16a34a;
+}
+
+/* ZERO */
+.calc-grid .zero {
+  grid-column: span 2;
+}
+/* ================= COUNTER ================= */
+.counter-box {
+  background: #0f1115;
+  padding: 28px 40px;
+  border-radius: 18px;
+  text-align: center;
+
+  box-shadow:
+    0 18px 36px rgba(0, 0, 0, 0.8);
+}
+
+/* LABEL */
+.counter-label {
+  font-size: 14px;
+  color: #9ca3af;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* VALUE */
+.counter-value {
+  font-size: 46px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+/* ACTIONS */
+.counter-actions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+}
+
+/* BUTTON */
+.counter-btn {
+  min-width: 54px;
+  height: 42px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+
+  background: #1f2937;
+  color: #f9fafb;
+
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.counter-btn:hover {
+  background: #374151;
+}
+
+.counter-btn:active {
+  transform: scale(0.95);
+}
+
+/* RESET */
+.counter-btn.reset {
+  padding: 0 16px;
+  background: #ef4444;
+  color: #ffffff;
+}
+
+.counter-btn.reset:hover {
+  background: #dc2626;
+}
+/* ================= TODO ================= */
+.todo-box {
+  background: #0f1115;
+  padding: 28px 34px;
+  border-radius: 18px;
+  width: 340px;
+
+  box-shadow:
+    0 18px 36px rgba(0, 0, 0, 0.8);
+}
+
+/* TITLE */
+.todo-title {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 18px;
+  color: #ffffff;
+}
+
+/* INPUT */
+.todo-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.todo-input button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+}
+
+.todo-input button:hover {
+  background: #2563eb;
+}
+
+/* LIST */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ITEM */
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: #1f2937;
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+  color: #e5e7eb;
+}
+
+/* CHECKBOX CUSTOM */
+.todo-item label {
+  position: relative;
+}
+
+.todo-item input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkmark {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background: #374151;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.todo-item input:checked + .checkmark {
+  background: #3b82f6;
+}
+
+/* TEXT */
+.todo-text {
+  flex: 1;
+  font-size: 14px;
+}
+
+/* DONE STATE */
+.todo-item.done .todo-text {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+/* DELETE */
+.delete-btn {
+  background: none;
+  border: none;
+  color: #9ca3af;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: #ef4444;
+}
+/* ================= WEATHER ================= */
+.weather-box {
+  background: #0f1115;
+  padding: 30px 34px;
+  border-radius: 18px;
+  width: 330px;              /* 👈 container made bigger */
+  text-align: center;
+
+  box-shadow:
+    0 18px 36px rgba(0, 0, 0, 0.8);
+}
+.weather-title {
+  font-size: 20px;
+  margin-bottom: 22px;   /* 👈 more space below heading */
+  color: #ffffff;
+}
+
+/* INPUT ROW */
+.weather-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+/* INPUT */
+.weather-input input {
+  flex: 1;                   /* takes more space */
+  padding: 10px 12px;        /* 👈 bigger input */
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+/* BUTTON */
+.weather-input button {
+  padding: 10px 14px;        /* 👈 balanced size */
+  border-radius: 8px;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.weather-input button:hover {
+  background: #2563eb;
+}
